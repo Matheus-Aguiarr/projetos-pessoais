@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de altura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main >
+        <h1>Descubra qual vai ser a altura do seu filho</h1>
+        <section>
+            <div class="altura-pais">
+                <h2>ALTURA DO <span class="pai">PAI</span> (em centímetros.)</h2>
+                <input type="number" class="altura-pai" id="paitxt">
+                <h2>ALTURA DA <span class="mae">MÃE</span> (em centímetros.)</h2>
+                <input type="number" class="altura-mãe" id="maetxt">
+            </div>
+            <h2>GÊNERO DO BEBÊ</h2>
+            <input type="button" value="Masculino" class="button-masculino" onclick="homem()"> <input type="button" value="Feminino" class="button-feminino" onclick="mulher()">
+            
+            <div>
+                <p id="resultado"></p>
+            </div>
+        </section>
+        
+        
+        
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
