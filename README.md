@@ -3,3 +3,4 @@
 
 <p><a href="https://matheus-aguiarr.github.io/projetos-pessoais/calculaaltura/index.html">Acessar a Calculadora de altura</a></p>
 <p><a href="https://matheus-aguiarr.github.io/projetos-pessoais/ToDoList/todo.html">Acessar o ToDoList</a></p>
+<P><a href="https://matheus-aguiarr.github.io/projetos-pessoais/calculadoraIMC/index.html">Acessar a Calculadora de IMC</a></P>
