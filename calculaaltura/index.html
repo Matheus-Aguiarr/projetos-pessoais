@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Calculadora de altura</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main >
-        <h1>Descubra qual vai ser a altura do seu filho</h1>
+    <main id="container">
         <section>
-            <div class="altura-pais">
-                <h2>ALTURA DO <span class="pai">PAI</span> (em centímetros.)</h2>
-                <input type="number" class="altura-pai" id="paitxt">
-                <h2>ALTURA DA <span class="mae">MÃE</span> (em centímetros.)</h2>
-                <input type="number" class="altura-mãe" id="maetxt">
-            </div>
-            <h2>GÊNERO DO BEBÊ</h2>
-            <input type="button" value="Masculino" class="button-masculino" onclick="homem()"> <input type="button" value="Feminino" class="button-feminino" onclick="mulher()">
-            
-            <div>
-                <p id="resultado"></p>
+            <h1>Calculador de altura</h1>
+            <div id="calculator">
+                <div class="altura-pais">
+                    <h2>ALTURA DO <span class="pai">PAI</span></h2>
+                    <div id="input">
+                        <i class="fa-solid fa-ruler" id="ruler"></i>
+                        <input type="number" class="altura-pai" id="paitxt">
+                        <span>cm</span>
+                    </div>
+                    <h2>ALTURA DA <span class="mae">MÃE</span></h2>
+                    <div id="input">
+                        <i class="fa-solid fa-ruler" id="ruler"></i>
+                        <input type="number" class="altura-mãe" id="maetxt">
+                        <span>cm</span>
+                    </div>
+                </div>
+                <h2 id="gender">GÊNERO DO BEBÊ</h2>
+                <div id="buttons">
+                    <input type="button" value="Masculino" class="button-masculino" onclick="homem()">
+                    <input type="button" value="Feminino" class="button-feminino" onclick="mulher()">
+                </div>
+                
+                <div>
+                    <p id="resultado"></p>
+                </div>
             </div>
         </section>
         
