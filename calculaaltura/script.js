@@ -3,12 +3,15 @@ const alturaMae = document.querySelector('#maetxt');
 const res = document.querySelector('#resultado');
 
 
+
 function homem() {
     let resultadoM = (Number(alturaPai.value) + Number(alturaMae.value)) / 2 + 6.5; 
     res.innerHTML = `Seu filho terá ${resultadoM}cm`
     if (alturaMae.value == 0 || alturaPai.value == 0) {
         res.innerHTML = ' <strong> Erro</strong>. Altura do <span class = "pai"> PAI </span>ou<span class = "mae"> MÃE </span>inválidas.';
     }
+
+    document.getElementById('img1').classList.remove('hidden');
 }
 
 function mulher() {
@@ -18,7 +21,7 @@ function mulher() {
         res.innerHTML = ' <strong>Erro</strong>. Altura do <span class = "pai"> PAI </span>ou<span class = "mae"> MÃE </span>inválidas.';
     }
     
-    
+    document.getElementById('img2').classList.remove('hidden');
     
 }
 

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
+:root {
+    --rosa: #f85cd6;
+    --azul: #44a8e2;
+    --background: #2f3436;
+    --background-input: #424444;
+}
 
 * {
     font-family: sans-serif;
@@ -9,14 +15,19 @@
 }
 
 body {
-    background-image: url(assets/5805548.jpg);
+    background-color: var(--background);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    gap: 7.5rem;
+}
 strong {
-    color: #aa619a;
+    color: var(--rosa);
 }
 
 h1 {
@@ -30,7 +41,7 @@ h1 {
 h1::after {
     position: absolute;
     content: '';
-    background: #44a8e2;
+    background: var(--azul);
     width: 8rem;
     height: 3px;
     bottom: 1;
@@ -41,7 +52,7 @@ h1::after {
 h1::before {
     position: absolute;
     content: '';
-    background: #f85cd6;
+    background: var(--rosa);
     width: 8rem;
     height: 3px;
     bottom: 0;
@@ -63,7 +74,7 @@ section {
     padding: 20px;
     margin: auto;
     box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.479);
-    background-color: #2f3436;
+    background-color: var(--background);
     margin-top: 200px;
     height: 400px;
 }
@@ -74,7 +85,7 @@ section {
     font-size: 15px;
     font-weight: bolder;
     padding: 1px;
-    background-color: #558BA0;
+    background-color: var(--azul);
     
 }
 
@@ -94,7 +105,7 @@ section {
     font-size: 15px;
     font-weight: bolder;
     padding: 1px;
-    background-color: #aa619a;
+    background-color: var(--rosa);
     
 }
 
@@ -107,13 +118,12 @@ section {
 }
 
 .mae {
-    color: #f85cd6;
+    color: var(--rosa);
     
 }
 
 .pai {
-    color: #44a8e2;
-    
+    color: var(--azul);
 }
 
 strong {
@@ -193,7 +203,15 @@ span {
     text-align: center;
 
 }
+img {
+    width: 32rem;
+    margin-left: 289px;
+    margin-top: 197px;
+}
 
+.hidden {
+    display: none;
+}
 @media screen and (max-width: 600px) {
     
     body {
@@ -205,6 +223,9 @@ span {
         border-radius: 0;
         width: 100%;
     }
-        
+    
+    img {
+        display: none;
+    }
     
 }
