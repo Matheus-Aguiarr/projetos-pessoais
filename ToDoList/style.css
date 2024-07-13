@@ -85,3 +85,25 @@ img {
     background-color: #8fac55;
     text-decoration: line-through;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        background: #a8a8a8;
+    }
+    .container {
+        width: 100%;
+        align-items: center;
+        box-shadow: -1px 3px 11px 0px #0000003b;
+        border-radius: 0;
+    }
+    .input-task {
+        justify-content: center;
+        width: 400px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .button-add-task {
+        height: 60px;
+    }
+    
+}
