@@ -207,10 +207,11 @@ img {
     width: 32rem;
     margin-left: 289px;
     margin-top: 197px;
+    
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     
     body {
         background-image: none;
@@ -220,9 +221,7 @@ img {
         box-shadow: none;
         border-radius: 0;
         width: 100%;
-    }
-    img {
-        display: none;
+        height: 100%;
     }
     
     
