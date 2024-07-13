@@ -225,7 +225,7 @@ img {
     }
     
     img {
-        display: none;
+        appearance: none;
     }
     
 }
