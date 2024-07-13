@@ -25,6 +25,7 @@ main {
     display: flex;
     align-items: center;
     gap: 7.5rem;
+    
 }
 strong {
     color: var(--rosa);
@@ -75,8 +76,8 @@ section {
     margin: auto;
     box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.479);
     background-color: var(--background);
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 250px;
+    
 }
 
 .button-masculino {
@@ -217,12 +218,15 @@ img {
         background-image: none;
         background-color: #2f3436;
     }
+    
     section {
         box-shadow: none;
         border-radius: 0;
         width: 100%;
-        height: 100%;
+        
     }
-    
+    img {
+        display: none;
+    }
     
 }
