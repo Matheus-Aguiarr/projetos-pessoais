@@ -11,7 +11,7 @@ function homem() {
         res.innerHTML = ' <strong> Erro</strong>. Altura do <span class = "pai"> PAI </span>ou<span class = "mae"> MÃE </span>inválidas.';
     }
 
-    document.getElementById('img1').classList.remove('hidden');
+    
 }
 
 function mulher() {
@@ -21,7 +21,7 @@ function mulher() {
         res.innerHTML = ' <strong>Erro</strong>. Altura do <span class = "pai"> PAI </span>ou<span class = "mae"> MÃE </span>inválidas.';
     }
     
-    document.getElementById('img2').classList.remove('hidden');
+    
     
 }
 

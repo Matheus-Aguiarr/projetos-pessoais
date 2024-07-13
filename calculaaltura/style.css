@@ -209,9 +209,7 @@ img {
     margin-top: 197px;
 }
 
-.hidden {
-    display: none;
-}
+
 @media screen and (max-width: 600px) {
     
     body {
@@ -223,9 +221,9 @@ img {
         border-radius: 0;
         width: 100%;
     }
-    
     img {
-        appearance: none;
+        display: none;
     }
+    
     
 }
