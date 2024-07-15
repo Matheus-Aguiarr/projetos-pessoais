@@ -86,6 +86,7 @@ img {
     text-decoration: line-through;
 }
 
+
 @media screen and (max-width: 600px) {
     body {
         background: #a8a8a8;

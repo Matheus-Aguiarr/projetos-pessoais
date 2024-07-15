@@ -39,6 +39,11 @@ h1 {
     font-size: 2.25rem;
 }
 
+h1.temaclaro {
+    color: var(--background);
+    background-color: #d1d1d1;
+}
+
 h1::after {
     position: absolute;
     content: '';
@@ -78,6 +83,11 @@ section {
     background-color: var(--background);
     margin-top: 250px;
     
+}
+
+section.temaclaro {
+    color: #000000;
+    background-color: #d1d1d1;
 }
 
 .button-masculino {
@@ -187,6 +197,23 @@ p {
     
 }
 
+
+#input-mae {
+    display: flex;
+    background-color: #424444;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+    width: 25rem;
+    
+}
+
+#input-mae.temaclaro,
+#input.temaclaro {
+    background-color: #d1d1d1;
+    color: var(--background-input);
+}
+
 span {
     color: #c7c7d4;
     font-weight: bold;
@@ -211,7 +238,67 @@ img {
     
 }
 
+#switch {
+    position: absolute;
+    margin-bottom: 372px;
+    margin-left: 1365px;
+}
 
+.theme-checkbox {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6.25em;
+    height: 3.125em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+  }
+  
+  .theme-checkbox::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .theme-checkbox:checked::before {
+    left: calc(100% - 2.25em - 0.438em);
+    background-position: 0;
+  }
+  
+  .theme-checkbox:checked {
+    background-position: 100%;
+  }
+
+
+  .temaclaro {
+    background-color: #d1d1d1;
+    color: var(--background-input);
+  }
+
+  
 @media screen and (max-width: 600px) {
     
     body {
@@ -229,4 +316,9 @@ img {
         display: none;
     }
     
+    #switch {
+        margin-top: -200px;
+        margin-left: 30px;
+    }
+
 }

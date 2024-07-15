@@ -7,24 +7,25 @@
     <title>Calculadora de altura</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main id="container">
+<body id="container">
+    <main>
+        <input type="checkbox" class="theme-checkbox" id="switch" onclick="mudatema()">
         <img src="assets/family.svg" alt="">
-        <section>
-            <h1>Calculador de altura</h1>
-            <div id="calculator">
+        <section id="calculator">
+            <h1 id="h1">Calculador de altura</h1>
+            <div>
                 <div class="altura-pais">
-                    <h2>ALTURA DO <span class="pai">PAI</span></h2>
+                    <h2 id="pai">ALTURA DO <span class="pai">PAI</span></h2>
                     <div id="input">
                         <i class="fa-solid fa-ruler" id="ruler"></i>
                         <input type="number" class="altura-pai" id="paitxt">
-                        <span>cm</span>
+                        <span id="cm">cm</span>
                     </div>
-                    <h2>ALTURA DA <span class="mae">MÃE</span></h2>
-                    <div id="input">
+                    <h2 id="mae">ALTURA DA <span class="mae">MÃE</span></h2>
+                    <div id="input-mae" >
                         <i class="fa-solid fa-ruler" id="ruler"></i>
                         <input type="number" class="altura-mãe" id="maetxt">
-                        <span>cm</span>
+                        <span id="cm2">cm</span>
                     </div>
                 </div>
                 <h2 id="gender">GÊNERO DO BEBÊ</h2>
