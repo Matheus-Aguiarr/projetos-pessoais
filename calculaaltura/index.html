@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Calculadora de altura</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="container">
     <main>
-        <input type="checkbox" class="theme-checkbox" id="switch" onclick="mudatema()">
+        <input type="checkbox" class="theme-checkbox" id="switch">
+
+
         <img src="assets/family.svg" alt="">
         <section id="calculator">
             <h1 id="h1">Calculador de altura</h1>
@@ -22,27 +28,32 @@
                         <span id="cm">cm</span>
                     </div>
                     <h2 id="mae">ALTURA DA <span class="mae">MÃE</span></h2>
-                    <div id="input-mae" >
+                    <div id="input-mae">
                         <i class="fa-solid fa-ruler" id="ruler"></i>
                         <input type="number" class="altura-mãe" id="maetxt">
                         <span id="cm2">cm</span>
                     </div>
+
                 </div>
+
                 <h2 id="gender">GÊNERO DO BEBÊ</h2>
+
                 <div id="buttons">
-                    <input type="button" value="Masculino" class="button-masculino" onclick="homem()">
-                    <input type="button" value="Feminino" class="button-feminino" onclick="mulher()">
+                    <button class="button-feminino">Feminino</button>
+                    <button class="button-masculino">Masculino</button>
                 </div>
-                
+
                 <div>
                     <p id="resultado"></p>
                 </div>
+                
             </div>
         </section>
-        
-        
-        
+
+
+
     </main>
 </body>
 <script src="script.js"></script>
+
 </html>

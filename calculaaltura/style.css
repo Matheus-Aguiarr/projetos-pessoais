@@ -319,6 +319,8 @@ img {
     #switch {
         margin-top: -200px;
         margin-left: 30px;
+        position: fixed;
     }
 
+    
 }

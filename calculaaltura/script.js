@@ -1,31 +1,29 @@
-const alturaPai = document.querySelector('#paitxt');
-const alturaMae = document.querySelector('#maetxt');
+const heightMom = document.getElementById('maetxt');
+const heightDad = document.getElementById('paitxt');
 const res = document.querySelector('#resultado');
-const check = document.getElementById('switch')
+const check = document.getElementById('switch');
+const buttons = document.querySelector('#buttons');
 
 
-function homem() {
-    let resultadoM = (Number(alturaPai.value) + Number(alturaMae.value)) / 2 + 6.5; 
-    res.innerHTML = `Seu filho terá ${resultadoM}cm`
-    if (alturaMae.value == 0 || alturaPai.value == 0) {
-        res.innerHTML = ' <strong> Erro</strong>. Altura do <span class = "pai"> PAI </span>ou<span class = "mae"> MÃE </span>inválidas.';
+
+
+buttons.addEventListener('click', getGender = (e) => {
+    if (e.target.innerHTML === 'Feminino') {
+        let heightBaby = (Number(heightDad.value) + Number(heightMom.value)) / 2 - 6.5;
+        res.innerHTML = `Sua filha terá ${heightBaby.toFixed(1)}cm de altura.`
+    } else {
+        let heightBaby = (Number(heightDad.value) + Number(heightMom.value)) / 2 + 6.5;
+        res.innerHTML = `Seu filho terá ${heightBaby.toFixed(1)}cm de altura.`
     }
-    
-    
-}
-
-function mulher() {
-    let resultadoF = (Number(alturaPai.value) + Number(alturaMae.value)) / 2 - 6.5;
-    res.innerHTML = `Sua filha terá ${resultadoF}cm.`
-    if (alturaPai.value == 0 || alturaMae.value == 0) {
-        res.innerHTML = ' <strong>Erro</strong>. Altura do <span class = "pai"> PAI </span>ou<span class = "mae"> MÃE </span>inválidas.';
+    if (heightDad.value == 0 || heightMom.value == 0) {
+        res.innerHTML = ' <strong>ERRO</strong>. Altura do <span class = "pai"> PAI</span> ou <span class = "mae"> MÃE </span> inválidas.'
     }
-    
-    
-    
-}
+})
+
 
 check.addEventListener('change', () => {
+
+
     document.body.classList.toggle('temaclaro')
     document.getElementById('calculator').classList.toggle('temaclaro')
     document.getElementById('h1').classList.toggle('temaclaro')
