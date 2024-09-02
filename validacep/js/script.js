@@ -74,7 +74,7 @@ const toggleDisabled = () => {
         })
     } else {
         formInputs.forEach((input) => {
-            input.setAttribute("disabled, disabled")
+            input.setAttribute("disabled", "disabled")
         })
     }
 }
