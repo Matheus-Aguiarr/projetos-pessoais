@@ -5,8 +5,6 @@ const check = document.getElementById('switch');
 const buttons = document.querySelector('#buttons');
 
 
-
-
 buttons.addEventListener('click', getGender = (e) => {
     if (e.target.innerHTML === 'Feminino') {
         let heightBaby = (Number(heightDad.value) + Number(heightMom.value)) / 2 - 6.5;
@@ -35,3 +33,5 @@ check.addEventListener('change', () => {
     document.querySelector('#cm').classList.toggle('temaclaro')
     document.getElementById('cm2').classList.toggle('temaclaro')
 })
+
+

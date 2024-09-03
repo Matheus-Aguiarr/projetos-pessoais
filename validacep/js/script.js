@@ -79,13 +79,14 @@ const toggleDisabled = () => {
     }
 }
 
-// show or hide loader
+// show or hide loaderr
 const toggleLoader = () => {
     const loaderElement = document.querySelector("#loader");
 
     fadeElement.classList.toggle("hide")
     loaderElement.classList.toggle("hide")
 }
+
 
 // show or hide message 
 const toggleMessage = (msg) => {
@@ -96,6 +97,7 @@ const toggleMessage = (msg) => {
     fadeElement.classList.toggle("hide")
     messageElement.classList.toggle("hide")
 };
+
 
 // close message modal
 closeButton.addEventListener("click", () => toggleMessage());
