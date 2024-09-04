@@ -4,7 +4,6 @@ const res = document.querySelector('#resultado');
 const check = document.getElementById('switch');
 const buttons = document.querySelector('#buttons');
 
-
 buttons.addEventListener('click', getGender = (e) => {
     if (e.target.innerHTML === 'Feminino') {
         let heightBaby = (Number(heightDad.value) + Number(heightMom.value)) / 2 - 6.5;
@@ -18,10 +17,7 @@ buttons.addEventListener('click', getGender = (e) => {
     }
 })
 
-
 check.addEventListener('change', () => {
-
-
     document.body.classList.toggle('temaclaro')
     document.getElementById('calculator').classList.toggle('temaclaro')
     document.getElementById('h1').classList.toggle('temaclaro')
@@ -33,5 +29,3 @@ check.addEventListener('change', () => {
     document.querySelector('#cm').classList.toggle('temaclaro')
     document.getElementById('cm2').classList.toggle('temaclaro')
 })
-
-

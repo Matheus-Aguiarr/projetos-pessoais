@@ -79,7 +79,7 @@ const toggleDisabled = () => {
     }
 }
 
-// show or hide loaderr
+// show or hide loader
 const toggleLoader = () => {
     const loaderElement = document.querySelector("#loader");
 
