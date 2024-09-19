@@ -21,7 +21,7 @@ check.addEventListener('change', () => {
     document.body.classList.toggle('temaclaro')
     document.getElementById('calculator').classList.toggle('temaclaro')
     document.getElementById('h1').classList.toggle('temaclaro')
-    document.getElementById('input').classList.toggle('temaclaro')
+    document.getElementById('input-pai').classList.toggle('temaclaro')
     document.getElementById('input-mae').classList.toggle('temaclaro')
     document.getElementById('gender').classList.toggle('temaclaro')
     document.getElementById('pai').classList.toggle('temaclaro')

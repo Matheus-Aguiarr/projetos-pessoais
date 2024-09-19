@@ -218,7 +218,7 @@ p {
 }
 
 #input-mae.temaclaro,
-#input.temaclaro {
+#input-pai.temaclaro {
     background-color: #d1d1d1;
     color: var(--background-input);
 }
