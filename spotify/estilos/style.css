@@ -48,13 +48,18 @@ body {
     background-color: #242424;
     padding: 16px;
     border-radius: 8px;
+    
+}
+
+.nav-playlist h5, .nav-podcast h5 {
+    margin-bottom: 5px;
 }
 
 .nav-playlist button, .nav-podcast button {
     background-color: #fff;
     color: #000;
     border: none;
-    padding: 6px 10px;
+    padding: 11px 15px;
     margin-top: 16px;
     cursor: pointer;
     font-size: 12px;
@@ -114,7 +119,14 @@ main {
     background-color: #242424;
     padding: 8px 12px;
     border-radius: 20px;
-    width: 300px;
+    width: 70%;
+    height: 50px;
+    font-size: 1.3rem;
+    margin: auto;
+}
+
+.search-bar i {
+    margin-left: 30px;
 }
 
 .search-bar input {
@@ -122,8 +134,9 @@ main {
     border: none;
     color: #fff;
     width: 100%;
-    margin-left: 10px;
+    margin-left: 30px;
     outline: none;
+    font-size: 1rem;
 }
 
 .artists-grid, .albums-grid {
