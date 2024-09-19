@@ -185,15 +185,18 @@ p {
     text-align: center;
     margin: auto;
     width: 100%;
+    border: none;
+    
     
 }
-#input {
+#input-pai {
     display: flex;
     background-color: #424444;
     padding: 0.3rem;
     border-radius: 3px;
     margin-top: 3px;
     width: 25rem;
+
     
 }
 
@@ -205,7 +208,13 @@ p {
     border-radius: 3px;
     margin-top: 3px;
     width: 25rem;
-    
+}
+
+#input-mae i {
+    color: var(--rosa);
+}
+#input-pai i {
+    color: var(--azul);
 }
 
 #input-mae.temaclaro,
