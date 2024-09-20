@@ -26,7 +26,7 @@ section {
     border-radius: 10px;
     padding: 10px;
     border: 2px solid white;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.719);
+    box-shadow:  3px 4px 8px rgba(0, 0, 0, 0.452);;
     backdrop-filter: blur(20px);
 }
 
@@ -78,15 +78,16 @@ img {
     border-radius: 25px;
     margin-bottom: 10px;
     background-color: white;
-    cursor: pointer;
-    transition: .5s;
+    transition: .8s;
    
 }
 
 .btn-login {
-    margin-left: 18%;
-    margin-top: 15px;
-    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 468px;
+    height: 60px;
     background-color: transparent;
     border: none;
     font-size: 1rem;
@@ -96,7 +97,11 @@ img {
     text-transform: uppercase;
 } 
 
- .submit:hover {
+.btn-login:hover {
+    color: white;
+}
+
+.submit:hover {
     color: white;
     background: transparent;
 }
