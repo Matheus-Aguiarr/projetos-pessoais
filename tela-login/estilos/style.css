@@ -79,22 +79,34 @@ img {
     margin-bottom: 10px;
     background-color: white;
     cursor: pointer;
+    transition: .5s;
+   
 }
 
 .btn-login {
     margin-left: 18%;
     margin-top: 15px;
     width: 300px;
-    color: #000;
     background-color: transparent;
     border: none;
     font-size: 1rem;
     letter-spacing: 3px;
     cursor: pointer;
+    color: #0f0f0f;
+    text-transform: uppercase;
 } 
+
+ .submit:hover {
+    color: white;
+    background: transparent;
+}
 
 .remember {
     margin-bottom: 10px;
+}
+
+.remember input {
+    cursor: pointer;
 }
 
 strong {
