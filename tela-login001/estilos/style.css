@@ -117,14 +117,3 @@ img {
 strong {
     cursor: pointer;
 }
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    * {
-        margin-bottom: 20px;
-    }
-
-    section {
-        width: 80vw;
-        height: 100vh;
-    }
-}
