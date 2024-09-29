@@ -7,3 +7,4 @@
 <p><a href="https://matheus-aguiarr.github.io/projetos-pessoais/validacep/index.html" target="_blank">Projeto de validação e autocomplete de CEP (feito apenas com fins de treino).</a></p>
 <p><a href="https://matheus-aguiarr.github.io/projetos-pessoais/menu-animado/index.html" target="_blank">Projeto de menu animado (feito apenas com fins de treino).</a></p>
 <p><a href="https://matheus-aguiarr.github.io/projetos-pessoais/troca-cor/index.html" target="_blank">Projeto de trocar as cores do background (feito apenas com fins de treino).</a></p>
+<p><a href="https://matheus-aguiarr.github.io/projetos-pessoais/jokeypo/index.html" target="_blank">Jo ken Po (pedra, papel, tesoura)</a></p>
