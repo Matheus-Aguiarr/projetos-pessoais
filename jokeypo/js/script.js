@@ -4,7 +4,7 @@ const resultText = document.querySelector('.result-text');
 const userResult = document.querySelector('.user-result img');
 const computerResult = document.querySelector('.computer-result img');
 
-const computerImg = ['/imagens/pedra.png', '/imagens/papel.png', '/imagens/tesoura.png'];
+const computerImg = ['./imagens/pedra.png', './imagens/papel.png', './imagens/tesoura.png'];
 
 const winner = {
     RR: 'Empate', 
