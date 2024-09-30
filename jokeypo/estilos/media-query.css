@@ -1,0 +1,19 @@
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #fff;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        box-shadow: none;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+}
