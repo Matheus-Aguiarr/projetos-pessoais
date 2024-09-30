@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
     body {
-        background-color: #fff;
+        background-color: #ffff;
     }
     .container {
         width: 100vw;
@@ -14,6 +14,4 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-
-}
+
