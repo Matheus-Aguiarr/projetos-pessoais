@@ -1,0 +1,19 @@
+nav {
+    font-size: 1.2em;
+}
+
+h1, h2 {
+    text-align: center;
+    
+}
+
+.carrossel {
+    width: 700px;
+    height: 500px;
+    background-color: grey;
+    margin: auto;
+}
+
+.carrossel img {
+    height: 500px;
+}
