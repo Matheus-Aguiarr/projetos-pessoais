@@ -21,7 +21,12 @@ cepInput.addEventListener("keypress", (e) => {
     }
 });
 
-// Get address event 
+// Why so much code?
+// since life isn't programmed
+// and the most beautiful things 
+// doesn't need any logic
+
+
 cepInput.addEventListener("keyup", (e) => {
     const inputValue = e.target.value 
 
