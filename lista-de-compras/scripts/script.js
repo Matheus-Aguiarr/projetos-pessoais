@@ -4,7 +4,7 @@ const quantity = document.querySelector('#quantity');
 const btnAdd = document.querySelector('.add');
 const total = document.querySelector('.total');
 
-let myShopList = [];
+let myShopList = JSON.parse(localStorage.getItem('myShopList')) || [];
 
 function totalCalc() {
     let totalSum = 0;
@@ -19,11 +19,16 @@ function totalCalc() {
 }
 
 function addListProducts() {
-    myShopList.push({
+    const newProduct = {
         produto: product.value,
         preco: parseFloat(price.value),  
         quantidade: parseInt(quantity.value),  
-    });
+    };
+
+    myShopList.push(newProduct);
+
+    localStorage.setItem('myShopList', JSON.stringify(myShopList));
+
     product.value = '';
     price.value = '';
     quantity.value = '';
@@ -35,6 +40,9 @@ function addListProducts() {
 function removeItem(index) {
     // Remove o item do array com base no índice
     myShopList.splice(index, 1);
+
+    localStorage.setItem('myShopList', JSON.stringify(myShopList));
+
     showNewList();
     totalCalc();  // Recalcula o total após remover um item
 }
@@ -49,7 +57,7 @@ function showNewList() {
                     ${item.produto}
                 </p>
                 <p>
-                    Preço: R$ ${(item.preco * item.quantidade).toFixed(2)}
+                     R$ ${(item.preco * item.quantidade).toFixed(2)}
                 </p>
                 <p>
                     qtd. ${item.quantidade}
@@ -72,6 +80,10 @@ function showNewList() {
     });
 }
 
+window.addEventListener('load', () => {
+    showNewList();
+    totalCalc();
+})
 
 document.addEventListener('keypress', (e) => {
     console.log(e);
