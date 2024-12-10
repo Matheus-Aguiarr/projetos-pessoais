@@ -84,3 +84,15 @@ input:focus {
     color: var(--dark-blue);
     margin-top: 20px;
 }
+
+@media  screen and (min-width: 800px) {
+    input, button, .product-attributes {
+        width: 400px;
+        margin: auto;
+    }
+
+    .product-attributes {
+        margin-top: 20px;
+    }
+    
+}
