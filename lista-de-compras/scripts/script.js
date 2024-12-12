@@ -108,4 +108,5 @@ document.addEventListener('keypress', (e) => {
 
 btnAdd.addEventListener('click', () => {
     addListProducts();
+    totalCalc();
 });
