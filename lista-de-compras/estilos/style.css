@@ -43,10 +43,21 @@ input, button {
     border: none;
     background-color: var(--dark-blue);
     color: #699EBF;
-    font-weight: bold;
     border-radius: 6px;
     padding: 15px;
     font-size: 1rem;
+}
+
+.add {
+    border: 2px solid var(--primary-blue);
+    font-weight: bold;
+    box-shadow: 0px 1.5px 3px var(--dark-blue);
+    transition: .5s;
+    
+}
+
+.add:hover {
+    letter-spacing: 0.8px;
 }
 
 input::-webkit-inner-spin-button, 
@@ -85,14 +96,22 @@ input:focus {
     margin-top: 20px;
 }
 
+.erro p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.erro span {
+    color: red;
+}
+
 @media  screen and (min-width: 800px) {
     input, button, .product-attributes {
         width: 400px;
         margin: auto;
     }
-
     .product-attributes {
         margin-top: 20px;
     }
-    
 }
+

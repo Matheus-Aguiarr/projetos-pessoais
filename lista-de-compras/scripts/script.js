@@ -4,17 +4,17 @@ const quantity = document.querySelector('#quantity');
 const btnAdd = document.querySelector('.add');
 const total = document.querySelector('.total');
 
+const err = document.querySelector('.erro');
+
 let myShopList = JSON.parse(localStorage.getItem('myShopList')) || [];
 
 function totalCalc() {
     let totalSum = 0;
 
-    // Soma o total de todos os produtos na lista
     myShopList.forEach(item => {
         totalSum += item.preco * item.quantidade;
     });
 
-    // Atualiza o HTML para exibir o total
     total.innerHTML = `Total: R$ ${totalSum.toFixed(2)}`;
 }
 
@@ -25,51 +25,60 @@ function addListProducts() {
         quantidade: parseInt(quantity.value),  
     };
 
-    myShopList.push(newProduct);
-
+    if (newProduct.produto === '' || isNaN(newProduct.preco) === true || isNaN(newProduct.quantidade) === true) {
+        err.innerHTML = '<p> <span>ERRO!</span> Certifique-se de que preencheu os três campos corretamente.</p>'
+    } else {
+        myShopList.push(newProduct);
+        err.innerHTML = '';
+    }
+    
+    
     localStorage.setItem('myShopList', JSON.stringify(myShopList));
-
+    
     product.value = '';
     price.value = '';
     quantity.value = '';
-
+    
     showNewList();
     totalCalc();  // Chama o cálculo total depois de adicionar um novo item
 }
 
+
+
 function removeItem(index) {
     // Remove o item do array com base no índice
     myShopList.splice(index, 1);
-
+    
     localStorage.setItem('myShopList', JSON.stringify(myShopList));
-
+    
     showNewList();
-    totalCalc();  // Recalcula o total após remover um item
+    totalCalc(); 
+     // Recalcula o total após remover um item
 }
 
 function showNewList() {
     let newLi = '';
-
+    
     myShopList.forEach((item, index) => {
         newLi += `
-            <li class="product-attributes">
-                <p>
-                    ${item.produto}
-                </p>
-                <p>
-                     R$ ${(item.preco * item.quantidade).toFixed(2)}
-                </p>
-                <p>
-                    qtd. ${item.quantidade}
-                </p>
-                <i class="fa-solid fa-trash remove" data-index="${index}"></i>
-            </li>
+        <li class="product-attributes">
+        <p>
+        ${item.produto}
+        </p>
+        <p>
+        R$ ${(item.preco * item.quantidade).toFixed(2)}
+        </p>
+        <p>
+        qtd. ${item.quantidade}
+        </p>
+        <i class="fa-solid fa-trash remove" data-index="${index}"></i>
+        </li>
         `;
     });
-
+    
     const completeList = document.querySelector('.list-products');
     completeList.innerHTML = newLi;
-
+    
     // Adiciona o evento de clique para remover os itens
     const removeButtons = document.querySelectorAll('.remove');
     removeButtons.forEach((button) => {
@@ -96,6 +105,7 @@ document.addEventListener('keypress', (e) => {
         total.innerHTML = "Eu te amo, carolzinha."
     }
 })
+
 btnAdd.addEventListener('click', () => {
     addListProducts();
 });
